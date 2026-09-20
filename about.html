@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>About - Sweet Crumbs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+        
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+
+        body {
+            background-color: #fff5f8;
+            font-family: Georgia, serif;
+        }
+
+        .navbar {
+            background-color: #4b211d;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 0.9;
+            text-align: center;
+            padding: 10px 20px;
+            border-left: 2px solid #d8a79b;
+            border-right: 2px solid #d8a79b;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 18px 7px !important;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            color: #f8b6d2 !important;
+        }
+
+        .page-header {
+            background-color: #f8c8dc;
+            padding: 70px 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .page-header h1 {
+            color: #7b302b;
+            font-weight: bold;
+        }
+
+        .about-img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .about-box {
+            background-color: white;
+            padding: 35px;
+            border-radius: 20px;
+        }
+
+        footer {
+            background-color: #4d211d;
+            color: white;
+            padding: 70px 8%;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .footer-column {
+            flex: 1;
+        }
+
+        .footer-column h2 {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            margin-bottom: 28px;
+        }
+
+        .footer-column p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 5px 0;
+        }
+
+        .footer-column a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .footer-social a {
+            font-size: 25px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+            }
+
+            footer {
+                padding: 50px 8%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-xl">
+
+    <div class="container-fluid">
+
+        <button class="navbar-toggler bg-light m-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="special-orders.html">SPECIAL ORDERS</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="reserve.html">RESERVE</a></li>
+                <li class="nav-item"><a class="nav-link" href="parties.html">PARTIES</a></li>
+
+                <li class="nav-item">
+                    <a class="navbar-brand" href="index.html">BAKE<br>SHOP</a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="catering.html">CATERING</a></li>
+                <li class="nav-item"><a class="nav-link" href="jobs.html">JOBS</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.html">TESTIMONIALS</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="page-header">
+
+    <h1>About Sweet Crumbs</h1>
+
+    <p>Our story and our love for baking</p>
+
+</section>
+
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-md-6">
+
+                <img src="bakery-shop.jpg"
+                     class="about-img"
+                     alt="Bakery Shop">
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="about-box shadow">
+
+                    <h2 class="text-danger">
+                        Our Story
+                    </h2>
+
+                    <p>
+                        Sweet Crumbs Bake Shop was created with
+                        one simple idea - to make every day a
+                        little sweeter.
+                    </p>
+
+                    <p>
+                        We bake cakes, cupcakes, pastries,
+                        breads and cookies using quality
+                        ingredients.
+                    </p>
+
+                    <p>
+                        Every product is prepared with care
+                        and attention to detail.
+                    </p>
+
+                    <button class="btn btn-danger"
+                            onclick="showAbout()">
+
+                        CLICK ME
+
+                    </button>
+
+                    <p id="aboutMessage"
+                       class="mt-3 fw-bold">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-container">
+
+        <!-- LOCATION -->
+        <div class="footer-column">
+
+            <h2>LOCATION</h2>
+
+            <p>
+                Bengaluru, Karnataka
+
+India - 560001
+            </p>
+
+            <p>
+                📍 <a href="https://www.google.com/maps" target="_blank">
+                    Get Directions
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- HOURS -->
+        <div class="footer-column">
+
+            <h2>HOURS</h2>
+
+            <p>
+                Tue, Wed, Thur, Fri<br>
+                8:30 AM - 5:30 PM
+            </p>
+
+            <br>
+
+            <p>
+                Sat<br>
+                7:30 AM - 3:00 PM
+            </p>
+
+            <br>
+
+            <p>
+                When Holidays fall on a Monday, we will be
+                closed the Tuesday after. We close yearly
+                for the first 3 weeks of July for Holidays.
+            </p>
+
+        </div>
+
+
+        <!-- FIND US -->
+        <div class="footer-column">
+
+            <h2>FIND US ON...</h2>
+
+            <div class="footer-social">
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="https://www.google.com/" target="_blank">
+                    <i class="bi bi-google"></i>
+                </a>
+
+            </div>
+
+
+            <br><br>
+
+            <!-- CONTACT -->
+            <h2>CONTACT US</h2>
+
+            <p>
+                7411787328
+            </p>
+
+            <p>
+                 bakery@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+
+    function showAbout() {
+
+        let bakery = "Sweet Crumbs Bake Shop";
+
+        let firstLetter = bakery.charAt(0);
+
+        let length = bakery.length;
+
+
+        document.getElementById("aboutMessage").innerHTML =
+            "First Letter: " + firstLetter +
+            "<br>Number of Characters: " + length;
+
+        document.getElementById("aboutMessage").style.color =
+            "red";
+
+        document.getElementById("aboutMessage").style.fontSize =
+            "20px";
+
+        document.getElementById("aboutMessage").style.backgroundColor =
+            "#ffe0eb";
+
+    }
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
